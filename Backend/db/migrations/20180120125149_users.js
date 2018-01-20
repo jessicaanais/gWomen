@@ -9,7 +9,8 @@ exports.up = function(knex, Promise) {
     table.string('photo');
     table.string('about');
     table.string('cohort');
-    table.string('location');
+    table.string('city');
+    table.string('state');
   })
 };
 
