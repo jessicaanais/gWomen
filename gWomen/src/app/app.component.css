@@ -1,0 +1,11 @@
+nav {
+  background-color: #0E111D;
+  height: 70px;
+  text-align: center;
+  opacity: 0.8;
+  width: 100%;
+}
+
+img {
+  position: relative;
+}
