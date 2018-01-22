@@ -4,7 +4,8 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('title');
     table.string('eventlink');
-    table.string('date');
+    table.string('month');
+    table.integer('day');
     table.string('city');
     table.string('state');
     table.string('host');
