@@ -4,6 +4,10 @@ nav {
   opacity: 0.9;
 }
 
-.navbar-item {
-  justify-content: left;
+footer {
+      background-color: #093E50;
+      color: white;
+      padding: 15px;
+      height: 70px !important;
+      opacity: 0.9;
 }

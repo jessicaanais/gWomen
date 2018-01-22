@@ -5,6 +5,25 @@
     <title> Upcoming Events </title>
   </head>
   <body>
-    <p>{{data[0].title}}</p>
+    <div class="container">
+      <ng-container *ngFor="let event of data">
+        <div class="card">
+          <div class="card-block">
+            <div class="row">
+              <div class="col-sm-1">
+                <h4>{{event.month}}</h4>
+                <h2>{{event.day}}</h2>
+              </div>
+              <div class="col-sm-11">
+                  <h3 class="card-title">{{event.title}}</h3>
+                  <h5 class="card-subtitle mb-2"> by {{event.host}}</h5>
+                  <h6 class="card-subtitle mb-2">{{event.city}}, {{event.state}}</h6>
+                  <a href="#" class="card-link">RSVP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
   </body>
 </html>
