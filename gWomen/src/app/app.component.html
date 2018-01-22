@@ -5,14 +5,29 @@
     <title>gWomen</title>
   </head>
   <body>
-    <nav>
-      <img src="https://brandfolder.com/galvanize/logo/galvanize-primary-logo.png" alt="Smiley face" height="75" width="180">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Upcoming Events</a>
-        <a href="#">Browse Jobs</a>
-        <a href="#">Sign up/ Login</a>
+    <nav class="navbar navbar-expand-sm">
+      <a class="navbar-brand" href="#" routerLink="/">
+        <img src="https://brandfolder.com/galvanize/logo/galvanize-primary-logo.png" alt="Smiley face" height="75" width="180">
+        gWomen
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="events">Upcoming Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="jobs">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="join">Sign up/ Login</a>
+        </li>
+      </ul>
     </nav>
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   </body>
 </html>
