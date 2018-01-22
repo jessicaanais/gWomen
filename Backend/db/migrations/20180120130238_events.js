@@ -5,7 +5,8 @@ exports.up = function(knex, Promise) {
     table.string('title');
     table.string('eventlink');
     table.string('date');
-    table.string('location');
+    table.string('city');
+    table.string('state');
     table.string('host');
   })
 };
