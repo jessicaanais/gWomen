@@ -9,12 +9,10 @@ import 'rxjs/add/operator/map';
 ]
 })
 export class EventsComponent {
-  title = 'app';
   private apiURL = 'http://localhost:8000/events';
-  data: any = {};
+  data: any = [{}];
 
   constructor(private http: Http){
-    console.log('hello');
     this.getEvents();
     this.getData();
   }
@@ -26,7 +24,7 @@ export class EventsComponent {
 
   getEvents(){
     this.getData().subscribe(data => {
-      console.log(data)
+      console.log("Events:",data)
       this.data = data
     })
   }
