@@ -14,6 +14,8 @@ module.exports = function(app){
 
   app.get('/jobs', jobs.getAll);
 
+  app.post('/jobs', jobs.addJob)
+
   //events
 
   app.get('/events', events.getAll);
