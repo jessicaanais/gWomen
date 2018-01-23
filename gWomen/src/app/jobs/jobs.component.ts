@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
+declare var jquery:any;
+declare var $:any;
 
 @Component({
   selector: 'app-jobs',
@@ -10,8 +12,15 @@ import 'rxjs/add/operator/map';
 export class JobsComponent {
   private apiURL = 'http://localhost:8000/jobs';
   data: any = [{}];
+  job: any = {
+    position:"",
+    description:"",
+    link:"",
+    contact:""
+  }
 
   constructor(private http: Http){
+    this.AddJobs(this.job);
     this.getJobs();
     this.getData2();
   }
@@ -26,5 +35,23 @@ export class JobsComponent {
       console.log("Jobs:", data)
       this.data = data
     })
+  }
+
+  onSubmit(){
+    this.AddJobs(this.job).subscribe(job => {
+      this.job = job
+      console.log("jobs data", this.data)
+      console.log("new job", job)
+      this.data.push(job)
+    })
+  }
+  AddJobs(job){
+    return this.http.post(this.apiURL, job)
+     .map((res: Response) => res.json()
+   )
+  }
+
+  toggleTitle(){
+    $('.title1').slideToggle()
   }
 }
