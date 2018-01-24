@@ -12,7 +12,7 @@ declare var $:any;
 export class JobsComponent {
   private apiURL = 'http://localhost:8000/jobs';
   data: any = [{}];
-  job: any = {
+  job = {
     position:"",
     description:"",
     link:"",
