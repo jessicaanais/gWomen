@@ -14,12 +14,13 @@ module.exports = function(app){
 
   app.get('/jobs', jobs.getAll);
 
-  app.post('/jobs', jobs.addJob)
+  app.post('/jobs', jobs.addJob);
 
   //events
 
   app.get('/events', events.getAll);
 
+  app.post('/events', events.addEvent)
   //posts
 
   app.get('/posts', posts.getAll);
