@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 declare var jquery:any;
 declare var $:any;
@@ -17,7 +17,7 @@ export class EventsComponent {
     title:"",
     eventlink:"",
     month:"",
-    day: 2,
+    day: 0,
     city:"",
     state:"",
     host:""
@@ -35,7 +35,6 @@ export class EventsComponent {
 
   getEvents(){
     this.getData().subscribe(data => {
-      console.log("Events:",data)
       this.data = data
     })
   }
@@ -44,13 +43,13 @@ export class EventsComponent {
     this.addEvents(this.event).subscribe( event => {
       this.event = event
       console.log("new event", event)
-      this.data.push(event)
+      this.data = this.data.concat(event)
     })
   }
 
   addEvents(event){
     return this.http.post(this.apiURL, event)
-    .map((res: Response)=> res.json())
+    .map((res: Response)=> res.json()
   }
 
   toggleTitle(){
