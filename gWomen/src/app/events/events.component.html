@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <title> Upcoming Events </title>
   </head>
   <body>
-    <div class="container"><button (click)="toggleTitle()">
+    <div class="container">
+      <button class="middle" (click)="toggleTitle()">
       + Add event
     </button>
     <div class="title1" style="display:none">
@@ -47,21 +49,25 @@
     </div>
       <ng-container *ngFor="let event of data">
         <div class="card">
-          <div class="card-block">
             <div class="row">
-              <div class="col-sm-1">
-                <h4>{{event.month}}</h4>
-                <h2>{{event.day}}</h2>
+              <div class="col-1">
+                <h4> {{event.month}} </h4>
+                <h3> {{event.day}} </h3>
               </div>
-              <div class="col-sm-11">
-                  <h3 class="card-title">{{event.title}}</h3>
-                  <h5 class="card-subtitle mb-2"> by {{event.host}}</h5>
-                  <h6 class="card-subtitle mb-2">{{event.city}}, {{event.state}}</h6>
-                  <a href="#" class="card-link">RSVP</a>
+              <div class="col-10">
+                <p class="who"> {{event.title}} - {{event.host}}</p>
+                <p class="location">{{event.city}}, {{event.state}}</p>
+              </div>
+              <div class="col-1">
+                <a href={{event.eventlink}}>
+                <button class="rsvp" type="button" name="button">
+                  RSVP
+                </button>
+              </a>
               </div>
             </div>
-          </div>
         </div>
+        <hr>
       </ng-container>
     </div>
   </body>

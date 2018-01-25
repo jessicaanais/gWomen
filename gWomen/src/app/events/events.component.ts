@@ -49,7 +49,7 @@ export class EventsComponent {
 
   addEvents(event){
     return this.http.post(this.apiURL, event)
-    .map((res: Response)=> res.json()
+    .map((res: Response)=> res.json())
   }
 
   toggleTitle(){

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 declare var jquery:any;
 declare var $:any;
@@ -20,7 +20,6 @@ export class JobsComponent {
   }
 
   constructor(private http: Http){
-    this.AddJobs(this.job);
     this.getJobs();
     this.getData2();
   }
@@ -38,17 +37,15 @@ export class JobsComponent {
   }
 
   onSubmit(){
-    this.AddJobs(this.job).subscribe(job => {
+    this.addJobs(this.job).subscribe(job => {
       this.job = job
-      console.log("jobs data", this.data)
-      console.log("new job", job)
-      this.data.push(job)
+      console.log('new job', job)
+      this.data = this.data.concat(job)
     })
   }
-  AddJobs(job){
+  addJobs(job){
     return this.http.post(this.apiURL, job)
-     .map((res: Response) => res.json()
-   )
+     .map((res: Response) => res.json())
   }
 
   toggleTitle(){

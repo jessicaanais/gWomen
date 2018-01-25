@@ -2,6 +2,8 @@ nav {
   background-color: #093E50  !important;
   height: 70px !important;
   opacity: 0.9;
+  font-family: 'Lora', serif;
+  font-size: 17px;
 }
 
 footer {

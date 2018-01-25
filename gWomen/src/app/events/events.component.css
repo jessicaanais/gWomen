@@ -1,0 +1,50 @@
+body {
+  font-family: 'Lora', serif;
+}
+
+.together{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.middle {
+  margin-left: 43%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 6px;
+  border-radius: 18px;
+}
+
+.card {
+  border: none;
+}
+
+.col-1 {
+  text-align: center;
+}
+
+hr {
+  height: 13px;
+	border: 0;
+  margin: 2%;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.rsvp {
+  padding: 10%;
+  border-radius: 18px;
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+.who {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.location {
+  font-size: 15px;
+}
