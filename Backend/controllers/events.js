@@ -9,11 +9,17 @@ module.exports = {
   },
   addEvent: function (req, res) {
     knex('events')
-      .insert(req.body)
-      .then(() => {
-        knex('events')
-          .select()
-          .then(event => res.json(event))
+      .insert({
+        title: req.body.title,
+        eventlink: req.body.eventlink,
+        month: req.body.month,
+        day: req.body.day,
+        city: req.body.city,
+        state: req.body.state,
+        host: req.body.host
+      }, '*')
+        .then((event) => {
+          res.json(event)
     })
   }
 }

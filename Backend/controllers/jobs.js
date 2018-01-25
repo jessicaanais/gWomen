@@ -9,11 +9,15 @@ module.exports = {
   },
   addJob: function (req, res) {
     knex('jobs')
-      .insert(req.body)
-      .then(() => {
-        knex('jobs')
-          .select()
-          .then(job => res.json(job))
+      .insert({
+        position: req.body.position,
+        description: req.body.description,
+        link: req.body.link,
+        contact: req.body.contact
+      }, '*')
+        .then((job) => {
+          console.log(job)
+          res.json(job)
     })
   }
 }
