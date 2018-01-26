@@ -12,7 +12,6 @@ declare var $:any;
 })
 export class EventsComponent {
   private apiURL = 'http://localhost:8000/events';
-  private apidelete = 'http://localhost:8000/events/${id}';
   data: any = [{}];
   event = {
     title:"",
@@ -26,7 +25,6 @@ export class EventsComponent {
 
   constructor(private http: Http){
     this.getEvents();
-    // this.getData();
   }
 
   getData(){

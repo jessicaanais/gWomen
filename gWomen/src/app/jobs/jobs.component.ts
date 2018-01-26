@@ -21,7 +21,6 @@ export class JobsComponent {
 
   constructor(private http: Http){
     this.getJobs();
-    this.getData2();
   }
 
   getData2(){
@@ -43,9 +42,23 @@ export class JobsComponent {
       this.data = this.data.concat(job)
     })
   }
+
   addJobs(job){
     return this.http.post(this.apiURL, job)
      .map((res: Response) => res.json())
+  }
+
+  onRemove(id){
+    this.removeJob(id).subscribe(job => {
+      this.data = this.data.filter((item) => {
+        return item.id != job.id
+      })
+    })
+  }
+
+  removeJob(id){
+    return this.http.delete(this.apiURL + '/' + id)
+    .map((res: Response) => res.json())
   }
 
   toggleTitle(){

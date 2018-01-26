@@ -36,6 +36,7 @@
       <ng-container *ngFor="let job of data">
         <h4>{{job.position}}</h4>
         <h6>{{job.description}}</h6>
+        <button type="button" name="button" (click)="onRemove(job.id)">Delete</button>
         <a href={{job.link}}>Learn More ... </a>
       </ng-container>
     </div>
