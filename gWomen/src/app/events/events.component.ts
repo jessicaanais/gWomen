@@ -12,6 +12,7 @@ declare var $:any;
 })
 export class EventsComponent {
   private apiURL = 'http://localhost:8000/events';
+  private apidelete = 'http://localhost:8000/events/${id}';
   data: any = [{}];
   event = {
     title:"",
@@ -25,7 +26,7 @@ export class EventsComponent {
 
   constructor(private http: Http){
     this.getEvents();
-    this.getData();
+    // this.getData();
   }
 
   getData(){
@@ -49,6 +50,19 @@ export class EventsComponent {
 
   addEvents(event){
     return this.http.post(this.apiURL, event)
+    .map((res: Response)=> res.json())
+  }
+
+  onRemove(id){
+    this.removeEvent(id).subscribe(event=>{
+      this.data = this.data.filter((item)=>{
+        return item.id != event.id;
+      })
+    })
+  }
+
+  removeEvent(id){
+    return this.http.delete(this.apiURL + '/' + id)
     .map((res: Response)=> res.json())
   }
 
