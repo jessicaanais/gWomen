@@ -4,8 +4,8 @@ module.exports = {
   getAll: function(req, res){
     knex('events')
     .select()
-    .then( events =>
-      res.json(events))
+    .then( events =>{
+      res.json(events)})
   },
   addEvent: function (req, res) {
     knex('events')
@@ -21,5 +21,15 @@ module.exports = {
         .then((event) => {
           res.json(event)
     })
-  }
+  },
+  removeEvent: function(req, res){
+    console.log(req.params.id)
+    knex('events')
+    .del()
+    .where('id', req.params.id)
+    .then(() => {
+      console.log('active')
+      res.json({id: req.params.id})
+    })
+   }
 }

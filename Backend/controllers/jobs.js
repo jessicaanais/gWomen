@@ -19,5 +19,14 @@ module.exports = {
           console.log(job)
           res.json(job)
     })
-  }
+  },
+  removeJob: function(req, res){
+    knex('jobs')
+    .del()
+    .where('id', req.params.id)
+    .then(() => {
+      console.log('active job')
+      res.json({id: req.params.id})
+    })
+   }
 }

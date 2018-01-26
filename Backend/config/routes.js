@@ -16,11 +16,16 @@ module.exports = function(app){
 
   app.post('/jobs', jobs.addJob);
 
+  app.delete('/jobs/:id', jobs.removeJob)
+
   //events
 
   app.get('/events', events.getAll);
 
-  app.post('/events', events.addEvent)
+  app.post('/events', events.addEvent);
+
+  app.delete('/events/:id', events.removeEvent);
+
   //posts
 
   app.get('/posts', posts.getAll);
