@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
+import { FilterjobsPipe } from '../filterjobs.pipe';
+
 import 'rxjs/add/operator/map';
 declare var jquery:any;
 declare var $:any;
@@ -7,7 +9,7 @@ declare var $:any;
 @Component({
   selector: 'app-jobs',
   templateUrl: './jobs.component.html',
-  styleUrls: ['./jobs.component.css']
+  styleUrls: ['./jobs.component.css'],
 })
 export class JobsComponent {
   private apiURL = 'http://localhost:8000/jobs';
@@ -64,4 +66,5 @@ export class JobsComponent {
   toggleTitle(){
     $('.title1').slideToggle()
   }
+
 }

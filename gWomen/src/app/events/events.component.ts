@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
+import { FilterPipe } from '../filter.pipe';
+
 import 'rxjs/add/operator/map';
 declare var jquery:any;
 declare var $:any;
@@ -7,9 +9,10 @@ declare var $:any;
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
-  styleUrls: ['./events.component.css',
-]
+  styleUrls: ['./events.component.css']
+
 })
+
 export class EventsComponent {
   private apiURL = 'http://localhost:8000/events';
   data: any = [{}];
@@ -67,4 +70,6 @@ export class EventsComponent {
   toggleTitle(){
     $('.title1').slideToggle()
   }
+
+
 }

@@ -10,7 +10,12 @@ import { EventsComponent } from './events/events.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JoinLoginComponent } from './join-login/join-login.component';
 
-import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router';
+import { FilterPipe } from './filter.pipe';
+import { FilterjobsPipe } from './filterjobs.pipe'
+
+// import { FilterPipe} from './filter.pipe';
+// import { FilterjobsPipe } from './filterjobs.pipe';
 
 const routeLists : Routes = [
   {path:"", component:HomeComponent},
@@ -24,9 +29,12 @@ const routeLists : Routes = [
     AppComponent,
     HomeComponent,
     AboutComponent,
+    FilterPipe,
     EventsComponent,
     JobsComponent,
-    JoinLoginComponent
+    JoinLoginComponent,
+    FilterjobsPipe
+    // FilterjobsPipe,
   ],
   imports: [
     BrowserModule,
