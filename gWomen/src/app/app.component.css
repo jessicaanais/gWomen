@@ -10,6 +10,24 @@ body {
   height: 1600px;
 }
 
+nav {
+  font-size: 17px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.this {
+  padding-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-4 {
+  margin-right: 100px !important;
+}
+
 footer {
       background-color: #093E50;
       color: white;
