@@ -6,6 +6,10 @@ nav {
   font-size: 17px;
 }
 
+body {
+  height: 1600px;
+}
+
 footer {
       background-color: #093E50;
       color: white;
