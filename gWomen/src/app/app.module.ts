@@ -9,10 +9,11 @@ import { AboutComponent } from './about/about.component';
 import { EventsComponent } from './events/events.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JoinLoginComponent } from './join-login/join-login.component';
+import { SignComponent } from './sign/sign.component'
 
 import { RouterModule, Routes } from '@angular/router';
 import { FilterPipe } from './filter.pipe';
-import { FilterjobsPipe } from './filterjobs.pipe'
+import { FilterjobsPipe } from './filterjobs.pipe';
 
 // import { FilterPipe} from './filter.pipe';
 // import { FilterjobsPipe } from './filterjobs.pipe';
@@ -22,7 +23,8 @@ const routeLists : Routes = [
   {path:"about", component:AboutComponent},
   {path:"events", component:EventsComponent},
   {path:"jobs", component:JobsComponent},
-  {path:"join", component:JoinLoginComponent}
+  {path:"join", component:JoinLoginComponent},
+  {path:"join/signup", component:SignComponent}
 ]
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ const routeLists : Routes = [
     EventsComponent,
     JobsComponent,
     JoinLoginComponent,
-    FilterjobsPipe
+    FilterjobsPipe,
+    SignComponent
     // FilterjobsPipe,
   ],
   imports: [
