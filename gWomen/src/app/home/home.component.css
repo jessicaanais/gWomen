@@ -1,18 +1,32 @@
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Lora', serif;
 }
 .hello {
   margin: 3% !important;
-  /*width: 100%;*/
   height: 34% !important;
 }
-.images {
-  /*margin-top: 3%;*/
+
+.main {
+  text-align: center;
+  padding-top: 15%;
+  text-shadow: 3px 3px #B0804F;
+  color: white;
 }
-/*.row {
-  padding-top: 20px !important;
-}*/
+
+.about {
+  background-image: url('http://via.placeholder.com/370x370');
+  margin-left: 2%;
+  text-shadow: 3px 3px #B0804F;
+  padding: 0;
+}
+
+.source {
+  text-align: center;
+  margin-top: 50%;
+  color: white;
+}
 
 .col {
   height: 380px;

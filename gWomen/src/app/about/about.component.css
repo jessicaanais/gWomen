@@ -1,0 +1,17 @@
+.hello {
+  margin: 3% !important;
+  height: 34% !important;
+}
+
+.main {
+  text-align: center;
+  padding-top: 15%;
+  text-shadow: 3px 3px #B0804F;
+  color: white;
+}
+
+.About {
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #243C54;
+}
