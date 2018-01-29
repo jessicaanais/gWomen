@@ -42,8 +42,7 @@
       </form>
     </div>
     <form>
-      <label> Filter through events </label>
-    <input type="text" name="form" value="" [(ngModel)]="term">
+    <input class="search" type="text" name="form" value="" [(ngModel)]="term" placeholder="Search your state for events . . .">
   </form>
       <ng-container *ngFor="let event of data | filter: term">
         <div class="card">
@@ -62,10 +61,10 @@
                   RSVP
                 </button>
               </a>
-              </div>
-              <button (click)="onRemove(event.id)" type="button" name="button">
+              <button class ="rsvp" (click)="onRemove(event.id)" type="button" name="button">
                 delete
               </button>
+              </div>
             </div>
         </div>
         <hr>

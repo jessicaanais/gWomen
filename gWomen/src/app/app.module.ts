@@ -14,6 +14,7 @@ import { SignComponent } from './sign/sign.component'
 import { RouterModule, Routes } from '@angular/router';
 import { FilterPipe } from './filter.pipe';
 import { FilterjobsPipe } from './filterjobs.pipe';
+import { UsersComponent } from './users/users.component';
 
 // import { FilterPipe} from './filter.pipe';
 // import { FilterjobsPipe } from './filterjobs.pipe';
@@ -24,7 +25,8 @@ const routeLists : Routes = [
   {path:"events", component:EventsComponent},
   {path:"jobs", component:JobsComponent},
   {path:"join", component:JoinLoginComponent},
-  {path:"join/signup", component:SignComponent}
+  {path:"join/signup", component:SignComponent},
+  {path:"join/users", component: UsersComponent}
 ]
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ const routeLists : Routes = [
     JobsComponent,
     JoinLoginComponent,
     FilterjobsPipe,
-    SignComponent
+    SignComponent,
+    UsersComponent
     // FilterjobsPipe,
   ],
   imports: [

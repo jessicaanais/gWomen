@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <button (click)="toggleTitle()">
+      <button class="middle" (click)="toggleTitle()">
         + Add job
       </button>
       <div class="title1" style="display:none">
@@ -34,14 +34,14 @@
         </form>
       </div>
       <form>
-        <label> Filter through jobs </label>
-          <input type="text" name="forms" [(ngModel)]="result">
+          <input class="search" type="text" name="forms" [(ngModel)]="result" placeholder="Search job title . . .">
         </form>
       <ng-container *ngFor="let job of data | filterjobs: result">
-        <h4>{{job.position}}</h4>
-        <h6>{{job.description}}</h6>
-        <button type="button" name="button" (click)="onRemove(job.id)">Delete</button>
+        <h4 class="position">{{job.position}}</h4>
+        <h6 class="description">{{job.description}}</h6>
         <a href={{job.link}}>Learn More ... </a>
+        <button class="delete" type="button" name="button" (click)="onRemove(job.id)">delete</button>
+        <hr>
       </ng-container>
     </div>
   </body>

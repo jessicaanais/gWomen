@@ -2,3 +2,50 @@
   background-image: url('https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-0.3.5&s=20b47e024cee65c7dee4c3f4855d5f6d&auto=format&fit=crop&w=1050&q=80');
   background-size: cover;
 }*/
+
+
+.container {
+  font-family: 'Lora', serif;
+}
+
+.middle {
+  margin-left: 43%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 6px;
+  border-radius: 18px;
+}
+
+.search {
+  margin-left: 30%;
+  font-size: 30px;
+  border-bottom: 2px solid #757575;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 3%;
+  width: 35%;
+  outline: none;
+}
+
+.position {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.delete {
+  border-radius: 18px;
+  margin-left: 85%;
+  padding: 6px;
+}
+
+hr {
+  height: 13px;
+	border: 0;
+  margin: 2%;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}

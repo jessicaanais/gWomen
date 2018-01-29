@@ -11,7 +11,7 @@
 h1 {
   padding-bottom: 3%;
   color: #243C54;
-  padding-left: 35%;
+  padding-left: 30%;
 }
 
 h2 {
@@ -28,6 +28,8 @@ h4 {
 
 button {
   margin-left: 47%;
+  border-radius: 18px;
+  padding: 6px;
 }
 
 .California{

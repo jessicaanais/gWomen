@@ -5,7 +5,8 @@ body {
 }
 .hello {
   margin: 3% !important;
-  height: 34% !important;
+  height: 36% !important;
+  background-image: url('http://via.placeholder.com/1488x543');
 }
 
 .main {
@@ -30,4 +31,13 @@ body {
 
 .col {
   height: 380px;
+}
+
+.jobs {
+  background-image: url('./jobs.png');
+  height: 380px;
+  width: 380px;
+  margin-left: 2%;
+  text-shadow: 3px 3px #B0804F;
+  padding: 0;
 }

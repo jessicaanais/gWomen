@@ -33,8 +33,20 @@ hr {
 .rsvp {
   padding: 10%;
   border-radius: 18px;
+  margin-bottom: 4%;
 }
 
+.search {
+  margin-left: 30%;
+  font-size: 30px;
+  border-bottom: 2px solid #757575;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 3%;
+  width: 35%;
+  outline: none;
+}
 
 a {
   text-decoration: none !important;
@@ -42,9 +54,9 @@ a {
 
 .who {
   font-weight: bold;
-  font-size: 19px;
+  font-size: 22px;
 }
 
 .location {
-  font-size: 15px;
+  font-size: 18px;
 }
