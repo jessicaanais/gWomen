@@ -4,8 +4,14 @@ const events = require("../controllers/events.js");
 const posts = require("../controllers/posts.js");
 const comments = require("../controllers/comments.js");
 
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
 module.exports = function(app){
 
+  app.use(cors())
+  
   //users
 
   app.get('/users', users.getAll);
