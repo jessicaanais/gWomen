@@ -15,6 +15,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FilterPipe } from './filter.pipe';
 import { FilterjobsPipe } from './filterjobs.pipe';
 import { UsersComponent } from './users/users.component';
+import { FilterstatePipe } from './filterstate.pipe';
+import { FiltertitlePipe } from './filtertitle.pipe';
 
 // import { FilterPipe} from './filter.pipe';
 // import { FilterjobsPipe } from './filterjobs.pipe';
@@ -39,7 +41,11 @@ const routeLists : Routes = [
     JoinLoginComponent,
     FilterjobsPipe,
     SignComponent,
-    UsersComponent
+    UsersComponent,
+    FilterstatePipe,
+    FilterstatePipe,
+    FiltertitlePipe,
+    FiltertitlePipe
     // FilterjobsPipe,
   ],
   imports: [

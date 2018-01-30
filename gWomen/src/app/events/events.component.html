@@ -41,10 +41,11 @@
        <input type="Submit" value="Submit"/>
       </form>
     </div>
-    <form>
+    <form class="row">
+    <input class="search" type="text" name="form" value="" [(ngModel)]="term1" placeholder="Search the title . . .">
     <input class="search" type="text" name="form" value="" [(ngModel)]="term" placeholder="Search your state for events . . .">
   </form>
-      <ng-container *ngFor="let event of data | filter: term">
+      <ng-container *ngFor="let event of data | filter: term | filtertitle: term1">
         <div class="card">
             <div class="row">
               <div class="col-1">

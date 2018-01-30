@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { FilterPipe } from '../filter.pipe';
+import { FiltertitlePipe } from '../filtertitle.pipe'
 
 import 'rxjs/add/operator/map';
 declare var jquery:any;

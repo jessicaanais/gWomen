@@ -33,11 +33,12 @@
          <input type="Submit" value="Submit"/>
         </form>
       </div>
-      <form>
+      <form class="row">
+          <input class="search" type="text" name="forms" [(ngModel)]="result1" placeholder="Search state location . . .">
           <input class="search" type="text" name="forms" [(ngModel)]="result" placeholder="Search job title . . .">
         </form>
-      <ng-container *ngFor="let job of data | filterjobs: result">
-        <h4 class="position">{{job.position}}</h4>
+      <ng-container *ngFor="let job of data | filterjobs: result | filterstate: result1">
+        <h4 class="position">{{job.position}}-{{job.location}}</h4>
         <h6 class="description">{{job.description}}</h6>
         <a href={{job.link}}>Learn More ... </a>
         <button class="delete" type="button" name="button" (click)="onRemove(job.id)">delete</button>

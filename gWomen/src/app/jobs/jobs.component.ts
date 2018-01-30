@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { FilterjobsPipe } from '../filterjobs.pipe';
+import { FilterstatePipe } from '../filterstate.pipe';
 
 import 'rxjs/add/operator/map';
 declare var jquery:any;
