@@ -19,7 +19,7 @@ body {
 .about {
   background-image: url('http://via.placeholder.com/370x370');
   margin-left: 2%;
-  text-shadow: 3px 3px #B0804F;
+  text-shadow: 3px 3px #2c5374;
   padding: 0;
 }
 
@@ -38,6 +38,22 @@ body {
   height: 380px;
   width: 380px;
   margin-left: 2%;
-  text-shadow: 3px 3px #B0804F;
+  text-shadow: 3px 3px #2c5374;
   padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 34px;
 }

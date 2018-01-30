@@ -24,12 +24,15 @@ h2 {
 h4 {
   text-align: center;
   padding: 5%;
+  color: #243C54;
 }
 
 button {
   margin-left: 47%;
   border-radius: 18px;
   padding: 6px;
+  background-color: #FF8800;
+  color: white;
 }
 
 .California{

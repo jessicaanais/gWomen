@@ -13,24 +13,24 @@
       <div class="title1" style="display:none">
         <form (ngSubmit)=onSubmit(job)>
           <div class="form-group" class="col-md-6 offset-md-3">
-            <label for="position">Position</label>
-            <input type="text" name="position" [(ngModel)]="job.position" class="form-control">
+            <label for="position"></label>
+            <input type="text" name="position" [(ngModel)]="job.position" class="form-control" placeholder="Position">
           </div>
             <div class="form-group">
-              <label for="description">Brief Description</label>
-              <input type="text" name="description" [(ngModel)]="job.description" class="form-control">
+              <label for="description"></label>
+              <input type="text" name="description" [(ngModel)]="job.description" class="form-control" placeholder="Brief description">
             </div>
           <div class="row justify-content-center">
             <div class="form-group col-4">
-              <label for="link"> Link to job </label>
-              <input type="text" name="link" [(ngModel)]="job.link" class="form-control">
+              <label for="link"></label>
+              <input type="text" name="link" [(ngModel)]="job.link" class="form-control" placeholder="Job link">
             </div>
             <div class="form-group col-4">
-              <label for="contact"> Contact </label>
-              <input type="text" name="contact" [(ngModel)]="job.contact" class="form-control">
+              <label for="contact"></label>
+              <input type="text" name="contact" [(ngModel)]="job.contact" class="form-control" placeholder="Contact">
             </div>
          </div>
-         <input type="Submit" value="Submit"/>
+         <input class="submit" type="Submit" value="Submit"/>
         </form>
       </div>
       <form class="row">
@@ -41,7 +41,7 @@
         <h4 class="position">{{job.position}}-{{job.location}}</h4>
         <h6 class="description">{{job.description}}</h6>
         <a href={{job.link}}>Learn More ... </a>
-        <button class="delete" type="button" name="button" (click)="onRemove(job.id)">delete</button>
+        <button class="delete" type="button" name="button" (click)="onRemove(job.id)"> Delete</button>
         <hr>
       </ng-container>
     </div>

@@ -1,8 +1,3 @@
-/*body {
-  background-image: url('https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-0.3.5&s=20b47e024cee65c7dee4c3f4855d5f6d&auto=format&fit=crop&w=1050&q=80');
-  background-size: cover;
-}*/
-
 
 .container {
   font-family: 'Lora', serif;
@@ -14,6 +9,9 @@
   margin-bottom: 3%;
   padding: 6px;
   border-radius: 18px;
+  outline: none;
+  color: #2c5374;
+  background-color: #E2D3C5;
 }
 
 .search {
@@ -48,4 +46,29 @@ hr {
 	border: 0;
   margin: 2%;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.submit {
+  margin-left: 43%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 7px;
+  border-radius: 18px;
+  color: white;
+  background-color: #FF8800;
+  outline: none;
+}
+
+.delete {
+  padding: 6px;
+  border-radius: 18px;
+  color: white;
+  background-color: #7A8592;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+  font-size: 17px;
+  color: #2c5374;
 }
