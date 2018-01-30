@@ -1,24 +1,26 @@
 body {
-  height: 100%;
-  width: 100%;
   font-family: 'Lora', serif;
+  height: 100vh;
+  width: 1583px;
 }
 .hello {
   margin: 3% !important;
-  height: 36% !important;
+  /*height: 36% !important;*/
   background-image: url('http://via.placeholder.com/1488x543');
 }
 
 .main {
   text-align: center;
   padding-top: 15%;
+  height: 543px;
+  /*width: 1688px;*/
   text-shadow: 3px 3px #B0804F;
   color: white;
 }
 
 .about {
   background-image: url('http://via.placeholder.com/370x370');
-  margin-left: 2%;
+  border: 10px;
   text-shadow: 3px 3px #2c5374;
   padding: 0;
 }
@@ -35,11 +37,9 @@ body {
 
 .jobs {
   background-image: url('./jobs.png');
-  height: 380px;
-  width: 380px;
-  margin-left: 2%;
+  height: 370px;
+  width: 370px;
   text-shadow: 3px 3px #2c5374;
-  padding: 0;
 }
 
 a {

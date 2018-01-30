@@ -1,41 +1,71 @@
-.row {
+body {
+
+  background-image: url('./back.png');
+  /*background-size: cover;*/
+  /*height: 1110px;*/
+  background-repeat: no-repeat;
+
+}
+
+/*.row {
   font-family: 'Lora', serif;
   margin-top: 5%;
+}*/
+
+
+.hello {
+  /*height: 400px;
+  width: 500px;*/
+  padding-bottom:30px;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.pad {
-  padding: 2%;
-  height: 800px;
+.hello1 {
+  margin: 0 auto;
+  /*width: 00px*/
 }
+
+.forms {
+  background-color: #FFF2C5;
+  padding: 5%;
+  border-radius: 5%;
+  margin-top: 10%;
+}
+
+/*.container {
+  margin-top: 15%;
+}*/
 
 h1 {
-  padding-bottom: 3%;
+  /*padding-bottom: 3%;*/
   color: #243C54;
-  padding-left: 30%;
+  /*padding-left: 30%;*/
 }
 
 h2 {
-  margin-top: 15%;
-  margin-bottom: 5%;
+  /*margin-top: 15%;*/
+  /*margin-bottom: 5%;*/
   color: #243C54;
   text-align: center;
 }
 
 h4 {
   text-align: center;
-  padding: 5%;
+  /*padding: 5%;*/
   color: #243C54;
 }
 
 button {
-  margin-left: 47%;
-  border-radius: 18px;
+  /*margin-left: 47%;*/
+  /*border-radius: 18px;*/
   padding: 6px;
   background-color: #FF8800;
   color: white;
 }
 
-.California{
+/*.California{
   background-image: url('./Cali2.png');
   height: 100px !important;
   width: 120px !important;
@@ -43,13 +73,13 @@ button {
   margin-left: 8%;
   margin-top: 4%;
   padding: 0;
-}
+}*/
 
-.second {
+/*.second {
   margin-top: 0;
-}
+}*/
 
-.Texas {
+/*.Texas {
   background-image: url('./Texas.png');
   height: 100px !important;
   width: 120px !important;
@@ -84,4 +114,4 @@ button {
   width: 120px !important;
   margin-top: 4%;
   background-repeat: no-repeat;
-}
+}*/

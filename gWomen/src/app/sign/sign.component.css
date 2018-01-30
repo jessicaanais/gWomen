@@ -1,8 +1,21 @@
 .container {
-  margin-top: 3%;
+  margin-top: 0%;
   font-family: 'Lora', serif;
 }
 
+.empower{
+  height: 225px;
+  width: 800px;
+  background-image: url('./women.png');
+  background-repeat: no-repeat;
+  margin-left: 14%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
 
 .working {
   border: 0;
@@ -11,7 +24,10 @@
 }
 
 button {
-  margin-left: 45%;
+  margin-left: 48%;
   padding: 7px;
   border-radius: 18px;
+  color: white;
+  background-color: #FF8800;
+  outline: none;
 }
