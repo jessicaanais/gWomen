@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
+import { FilterpeoplePipe } from '../filterpeople.pipe'
 
 
 @Component({

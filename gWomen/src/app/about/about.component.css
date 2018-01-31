@@ -1,7 +1,10 @@
 .hello {
   margin: 3% !important;
-  height: 550px !important;
-  background-image: url('http://via.placeholder.com/1488x550');
+  height: 600px !important;
+
+  background-image: url('./girlssmile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main {

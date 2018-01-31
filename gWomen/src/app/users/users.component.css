@@ -30,7 +30,7 @@
 }
 
 .user {
-  margin-top: 9%;
+  margin-top: 8%;
   height: 100%;
   width: 100%;
   background-color: ;
@@ -38,19 +38,37 @@
 
 .image {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
 }
 
 .col-4 {
-  text-align: center;
-  font-size: 30px;
-  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 hr {
-  height: 13px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
 	border: 0;
-  margin: 2%;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  margin: 11px;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset !important;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+input {
+  width: 30% !important;
+  font-size: 30px !important;
+  margin-top: 5%;
+  margin-left: 27%;
+  border-bottom: 2px solid #ccc !important;
 }

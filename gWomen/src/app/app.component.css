@@ -56,3 +56,12 @@ footer {
   padding-right:0px;
   padding-top: 10px;
 }
+
+.col-1 {
+  padding-top: 25px;
+  padding-left: 160px;
+}
+
+.col-2 {
+  padding-top: 25px;
+}

@@ -26,19 +26,18 @@
 <!--Collection card-->
 <!--Collection card-->
 <div class="container">
-  <div class="form-group">
-    <input type="text" name="host" class="form-control" placeholder="search people">
-  </div>
+  <form class="row">
+    <input class="search" type="text" name="form" value="" [(ngModel)]="term" placeholder="Search the people . . .">
+  </form>
 <div class="user row">
-    <!--Card image-->
-    <ng-container *ngFor="let user of data">
+    <ng-container *ngFor="let user of data | filterpeople: term">
     <div class="hm-zoom col-3 images">
         <img class="image" src={{user.photo}}  alt="">
     </div>
     <div class="col-8 description">
         <h2>{{user.firstname}} {{user.lastname}} g{{user.cohort}}</h2>
         <h3>{{user.about}}</h3>
-        <h6> Arizona </h6>
+        <h6> {{user.location}} </h6>
         <a href={{user.github}}><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         <a href={{user.linkedin}}><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
     </div>

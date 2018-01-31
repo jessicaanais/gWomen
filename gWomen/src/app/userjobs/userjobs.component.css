@@ -1,0 +1,35 @@
+.container {
+  font-family: 'Lora', serif;
+}
+.search {
+  margin-left: 11%;
+  font-size: 30px;
+  border-bottom: 2px solid #757575;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 3%;
+  width: 30%;
+  outline: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.position {
+  font-weight: bold;
+  font-size: 22px;
+}
+.description {
+  font-size: 18px;
+}
+hr {
+  height: 13px;
+	border: 0;
+  margin: 2%;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+a {
+  text-decoration: none !important;
+  outline: none;
+  font-size: 17px;
+  color: #2c5374;
+}

@@ -2,6 +2,9 @@ body {
   font-family: 'Lora', serif;
   height: 100vh;
   width: 1583px;
+  background-image: url('./girlss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hello {
   margin: 3% !important;
@@ -11,9 +14,8 @@ body {
 
 .main {
   text-align: center;
-  padding-top: 15%;
+  padding-top: 20%;
   height: 543px;
-  /*width: 1688px;*/
   text-shadow: 3px 3px #B0804F;
   color: white;
 }
@@ -35,25 +37,56 @@ body {
   height: 380px;
 }
 
-.jobs {
+/*.jobs {
   background-image: url('./jobs.png');
   height: 370px;
   width: 370px;
   text-shadow: 3px 3px #2c5374;
-}
+}*/
 
 a {
   text-decoration: none !important;
 }
 
-h3 {
-  font-size: 34px;
-}
-
-h1 {
-  font-size: 50px;
+.forms {
+  background-color: #294D7A;
+  padding: 3%;
+  margin-left: 33%;
+  border-radius: 5%;
+  margin-top: 20%;
+  width: 370px;
+  height: 400px;
 }
 
 h2 {
-  font-size: 34px;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 15%;
+  padding-bottom: 17px;
+  text-align: center;
+  color: white;
+}
+button {
+  margin-top: 5%;
+  border-radius: 20px;
+  padding: 6px;
+  background-color: #FF8800;
+  color: white;
+  font-size: 15px;
+  margin-left: 40%;
+}
+
+.col-5 {
+  margin-top: 11%;
+  background-image: url('./girlstalk.png');
+  /*width: 500px;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.row {
+  height: 600px;
 }

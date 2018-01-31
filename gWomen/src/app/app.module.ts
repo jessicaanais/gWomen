@@ -10,6 +10,8 @@ import { EventsComponent } from './events/events.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JoinLoginComponent } from './join-login/join-login.component';
 import { SignComponent } from './sign/sign.component'
+import { UsereventsComponent } from './userevents/userevents.component'
+import { UserjobsComponent } from './userjobs/userjobs.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { FilterPipe } from './filter.pipe';
@@ -17,6 +19,8 @@ import { FilterjobsPipe } from './filterjobs.pipe';
 import { UsersComponent } from './users/users.component';
 import { FilterstatePipe } from './filterstate.pipe';
 import { FiltertitlePipe } from './filtertitle.pipe';
+import { FilterpeoplePipe } from './filterpeople.pipe';
+import { AdminviewComponent } from './adminview/adminview.component';
 
 // import { FilterPipe} from './filter.pipe';
 // import { FilterjobsPipe } from './filterjobs.pipe';
@@ -24,11 +28,14 @@ import { FiltertitlePipe } from './filtertitle.pipe';
 const routeLists : Routes = [
   {path:"", component:HomeComponent},
   {path:"about", component:AboutComponent},
-  {path:"events", component:EventsComponent},
-  {path:"jobs", component:JobsComponent},
+  {path:"events/admin", component:EventsComponent},
+  {path:"jobs/admin", component:JobsComponent},
   {path:"join", component:JoinLoginComponent},
   {path:"join/signup", component:SignComponent},
-  {path:"join/users", component: UsersComponent}
+  {path:"join/users", component: UsersComponent},
+  {path:"userevents", component: UsereventsComponent},
+  {path:"userjobs", component: UserjobsComponent},
+  {path:"admin/dashboard", component: AdminviewComponent}
 ]
 @NgModule({
   declarations: [
@@ -45,7 +52,11 @@ const routeLists : Routes = [
     FilterstatePipe,
     FilterstatePipe,
     FiltertitlePipe,
-    FiltertitlePipe
+    FiltertitlePipe,
+    UsereventsComponent,
+    UserjobsComponent,
+    FilterpeoplePipe,
+    AdminviewComponent
   ],
   imports: [
     BrowserModule,
