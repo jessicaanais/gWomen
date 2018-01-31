@@ -75,3 +75,14 @@ input {
   text-decoration: none !important;
   outline: none;
 }
+
+.hello {
+  margin-left: 90%;
+}
+
+.button {
+  padding: 3%;
+  border-radius: 18px;
+  color: white;
+  background-color: #7A8592;
+}

@@ -36,3 +36,19 @@ h1 {
   text-align: center;
   margin-top: 300px;
 }
+
+.hello {
+  margin-left: 90%;
+}
+
+.button {
+  padding: 3%;
+  border-radius: 18px;
+  color: white;
+  background-color: #7A8592;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+}

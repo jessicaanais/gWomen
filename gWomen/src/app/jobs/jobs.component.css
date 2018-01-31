@@ -72,3 +72,15 @@ a {
   font-size: 17px;
   color: #2c5374;
 }
+
+
+.hello {
+  margin-left: 90%;
+}
+
+.button {
+  padding: 3%;
+  border-radius: 18px;
+  color: white;
+  background-color: #7A8592;
+}
