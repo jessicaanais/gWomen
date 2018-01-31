@@ -3,6 +3,7 @@ const jobs = require("../controllers/jobs.js");
 const events = require("../controllers/events.js");
 const posts = require("../controllers/posts.js");
 const comments = require("../controllers/comments.js");
+const admin = require("../controllers/admin.js")
 
 const express = require('express');
 const cors = require('cors');
@@ -11,10 +12,16 @@ const app = express();
 module.exports = function(app){
 
   app.use(cors())
-  
+
+  //admin
+
+  app.get('/admin', admin.getIt);
+
   //users
 
   app.get('/users', users.getAll);
+
+  app.delete('/users/:id', users.removeUser);
 
   //jobs
 
