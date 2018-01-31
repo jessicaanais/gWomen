@@ -1,0 +1,23 @@
+<body>
+  <form class="row">
+    <input class="search" type="text" name="form" value="" [(ngModel)]="term" placeholder="Search the people . . .">
+  </form>
+  <div class="container">
+    <ng-container *ngFor="let user of data | managepeople: term">
+      <div class="user row">
+    <div class="hm-zoom col-4 images">
+        <img class="image" src={{user.photo}}  alt="">
+    </div>
+    <div class="col-4 description">
+        <h2>{{user.firstname}} {{user.lastname}} g{{user.cohort}}</h2>
+    </div>
+    <div class="col-3">
+      <button class="delete col-5" (click)="onRemove(user.id)" type="button" name="button">
+        Delete
+      </button>
+    </div>
+    </div>
+    <hr>
+  </ng-container>
+</div>
+</body>

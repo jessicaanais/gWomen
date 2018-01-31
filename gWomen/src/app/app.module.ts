@@ -21,6 +21,8 @@ import { FilterstatePipe } from './filterstate.pipe';
 import { FiltertitlePipe } from './filtertitle.pipe';
 import { FilterpeoplePipe } from './filterpeople.pipe';
 import { AdminviewComponent } from './adminview/adminview.component';
+import { ManageuserComponent } from './manageuser/manageuser.component';
+import { ManagepeoplePipe } from './managepeople.pipe';
 
 // import { FilterPipe} from './filter.pipe';
 // import { FilterjobsPipe } from './filterjobs.pipe';
@@ -35,7 +37,8 @@ const routeLists : Routes = [
   {path:"join/users", component: UsersComponent},
   {path:"userevents", component: UsereventsComponent},
   {path:"userjobs", component: UserjobsComponent},
-  {path:"admin/dashboard", component: AdminviewComponent}
+  {path:"admin/dashboard", component: AdminviewComponent},
+  {path: "admin/dashboard/users", component: ManageuserComponent}
 ]
 @NgModule({
   declarations: [
@@ -56,7 +59,9 @@ const routeLists : Routes = [
     UsereventsComponent,
     UserjobsComponent,
     FilterpeoplePipe,
-    AdminviewComponent
+    AdminviewComponent,
+    ManageuserComponent,
+    ManagepeoplePipe
   ],
   imports: [
     BrowserModule,
