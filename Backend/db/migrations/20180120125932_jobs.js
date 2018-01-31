@@ -3,9 +3,10 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('jobs', (table)=> {
     table.increments();
     table.string('position');
-    table.string('description');
+    table.text('description');
     table.string('link');
     table.string('contact');
+    table.string('location')
   })
 };
 

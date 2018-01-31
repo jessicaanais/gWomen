@@ -7,9 +7,11 @@ exports.up = function(knex, Promise) {
     table.string('username');
     table.string('password');
     table.string('photo');
-    table.string('about');
+    table.text('about');
     table.string('cohort');
     table.string('state');
+    table.string('linkedin');
+    table.string('github');
   })
 };
 
