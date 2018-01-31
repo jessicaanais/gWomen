@@ -26,6 +26,7 @@ body {
 .hello1 {
   margin: 0 auto;
   /*width: 00px*/
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .forms {
@@ -35,6 +36,7 @@ body {
   margin-right: 35%;
   border-radius: 5%;
   margin-top: 10%;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*.container {
@@ -63,10 +65,11 @@ h4 {
 button {
   /*margin-left: 47%;*/
   margin-top: 2%;
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 6px;
   background-color: #FF8800;
   color: white;
+  font-size: 20px;
   margin-left: 45%;
 }
 

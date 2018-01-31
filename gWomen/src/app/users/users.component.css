@@ -1,4 +1,4 @@
-.card {
+/*.card {
   font-family: 'Lora', serif;
   padding:0;
   margin-top: 3%;
@@ -23,4 +23,34 @@
 
 .h {
   text-align: center;
+}*/
+
+.description {
+  padding-top: 3%;
+}
+
+.user {
+  margin-top: 9%;
+  height: 100%;
+  width: 100%;
+  background-color: ;
+}
+
+.image {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.col-4 {
+  text-align: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+hr {
+  height: 13px;
+	border: 0;
+  margin: 2%;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }

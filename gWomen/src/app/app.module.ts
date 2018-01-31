@@ -46,7 +46,6 @@ const routeLists : Routes = [
     FilterstatePipe,
     FiltertitlePipe,
     FiltertitlePipe
-    // FilterjobsPipe,
   ],
   imports: [
     BrowserModule,

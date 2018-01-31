@@ -1,5 +1,5 @@
 
-<div class="card container first">
+<!-- <div class="card container first">
   <img class="card-img-top profile" src="http://newsroom.su/wp-content/uploads/2016/10/24793321355_f9173d1d00_b-274x300.jpg" alt="User Image" height="200px" width="40px">
   <div class="card-block second">
     <h4 class="card-title h">User name</h4>
@@ -14,4 +14,42 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
+</head>
+
+<!-- Grid row -->
+<!--Collection card-->
+<!--Collection card-->
+<div class="container">
+  <div class="form-group">
+    <input type="text" name="host" class="form-control" placeholder="search people">
+  </div>
+<div class="user row">
+    <!--Card image-->
+    <ng-container *ngFor="let user of data">
+    <div class="hm-zoom col-3 images">
+        <img class="image" src={{user.photo}}  alt="">
+    </div>
+    <div class="col-8 description">
+        <h2>{{user.firstname}} {{user.lastname}} g{{user.cohort}}</h2>
+        <h3>{{user.about}}</h3>
+        <h6> Arizona </h6>
+        <a href={{user.github}}><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a href={{user.linkedin}}><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <hr>
+  </ng-container>
+    <!-- <div class="col-1 icons">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div> -->
+    <!--/.Card image-->
+ </div>
 </div>
+<!--/.Collection card-->
+    <!--/.Collection card-->
