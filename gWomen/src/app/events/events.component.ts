@@ -28,7 +28,7 @@ export class EventsComponent {
   }
 
   constructor(private http: Http){
-    this.getEvents();
+    this.getEvents1();
   }
 
   getData(){
@@ -36,9 +36,10 @@ export class EventsComponent {
     .map((res: Response) => res.json())
   }
 
-  getEvents(){
+  getEvents1(){
     this.getData().subscribe(data => {
       this.data = data
+      console.log(this.data)
     })
   }
 

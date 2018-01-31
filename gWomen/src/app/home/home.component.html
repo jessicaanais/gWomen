@@ -1,5 +1,4 @@
 <head>
-    <script src="https://use.fontawesome.com/3b2750a762.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -7,7 +6,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col">
-      <form class="forms">
+      <form class="forms" (submit)="loginUser($event)">
         <h2>Log In !</h2>
         <div class="form-group">
           <label for="email"></label>
@@ -20,7 +19,7 @@
         <div class="">
             <h4 routerLink="/join/signup">New to gWomen? Register here !</h4>
         </div>
-        <button class="hoverable" routerLink="/join/users" type="submit">Submit</button>
+        <button class="hoverable" type="submit">Submit</button>
       </form>
     </div>
   </div>

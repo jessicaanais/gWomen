@@ -1,8 +1,29 @@
+body{
+  font-family: 'Lora', serif;
+  color: white;
+}
+
 .jobs {
   background-image: url('./jobss.png');
   background-size: cover;
   background-repeat: no-repeat;
   height:700px;
+  text-shadow: 3px 3px #2c5374;
+}
+
+.events {
+  background-image: url('./events3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:700px;
+  text-shadow: 3px 3px #2c5374;
+}
+.users {
+  background-image: url('./users.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:700px;
+  text-shadow: 3px 3px #2c5374;
 }
 
 .container {
@@ -11,7 +32,7 @@
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
-  margin-top: 80%;
+  margin-top: 300px;
 }

@@ -28,8 +28,8 @@ import { AdminviewComponent } from './adminview/adminview.component';
 const routeLists : Routes = [
   {path:"", component:HomeComponent},
   {path:"about", component:AboutComponent},
-  {path:"events/admin", component:EventsComponent},
-  {path:"jobs/admin", component:JobsComponent},
+  {path:"admin/dashboard/events", component:EventsComponent},
+  {path:"admin/dashboard/jobs", component:JobsComponent},
   {path:"join", component:JoinLoginComponent},
   {path:"join/signup", component:SignComponent},
   {path:"join/users", component: UsersComponent},
